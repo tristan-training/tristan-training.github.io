@@ -1,0 +1,87 @@
+hr {
+  border: 0px;
+  height: 3px;
+  background: black;
+}
+
+ul.s {
+  text-decoration: underline;
+  list-style-type: disc;
+}
+
+ol.s,
+ol.ss {
+  list-style-type: none;
+}
+
+ol.s {
+  counter-reset: ctrol 9;
+}
+
+ol.ss {
+  counter-reset: ctrol;
+}
+
+ol.s li:before,
+ol.ss li::before {
+  text-decoration: underline;
+  font-family: Arial;
+  font-style: italic;
+  content: counters(ctrol, ".") " ";
+}
+
+ol.s li,
+ol.ss li {
+  counter-increment: ctrol;
+  font-family: cursive;
+  text-decoration: solid;
+}
+
+a.s[href^="https"]::before {
+  content: "🔗 ";
+}
+
+a.s[href^="mailto"]::before {
+  content: "📧 ";
+}
+
+a.s[href^="tel"]::before {
+  content: "📞 ";
+}
+
+.padding {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+table.s {
+  border: 5px solid black;
+  border-collapse: collapse;
+}
+
+th.s {
+  border: 3px solid black;
+  text-align: left;
+}
+
+td.s {
+  border: 2px solid black;
+}
+
+table.thinline {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td.thinline {
+  border: 1px solid black;
+}
+
+table.bgcolor {
+  background-color: whitesmoke;
+}
+
+th.heading {
+  font-weight: bold;
+  text-align: left;
+}
