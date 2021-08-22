@@ -1,7 +1,16 @@
+body {
+  background-color: #7fc8a950;
+}
+
 hr {
-  border: 0px;
-  height: 3px;
-  background: black;
+  border-style: none;
+  width: 100px;
+  border-top: 3px dashed #8e8d8f80;
+}
+
+h1,
+h3 {
+  color: #66bfbf;
 }
 
 ul.s {
@@ -49,39 +58,62 @@ a.s[href^="tel"]::before {
   content: "📞 ";
 }
 
-.padding {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 table.s {
-  border: 5px solid black;
+  border-width: 2px;
+  border-color: black;
   border-collapse: collapse;
+  background-color: #d5eebb50;
 }
 
 th.s {
-  border: 3px solid black;
+  border: 2px solid black;
+  font-weight: bold;
   text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #5f7a6150;
 }
 
 td.s {
   border: 2px solid black;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-table.thinline {
-  border: 1px solid black;
+table.tablecollapse {
   border-collapse: collapse;
 }
 
-td.thinline {
-  border: 1px solid black;
+table.tableline {
+  border: 2px solid black;
 }
 
-table.bgcolor {
-  background-color: whitesmoke;
+table.tablebgcolor {
+  background-color: #d5eebb50;
+}
+
+td.padding,
+th.padding {
+  padding-left: 20px;
+  padding-right: 20px;
+  border-width: 0;
+}
+
+td.nopadding,
+th.nopadding {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-width: 0;
 }
 
 th.heading {
   font-weight: bold;
   text-align: left;
+  background-color: #5f7a6150;
+}
+
+div.pad {
+  padding-top: 100px;
 }
